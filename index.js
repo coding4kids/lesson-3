@@ -22,26 +22,13 @@ prompt.start();
  * 
  */
 prompt.get(['num1'], function (err, result)  {
-  function great(){
-  }
-  (great);
-  function less(){
-  }
-  (less);
-  function equal(){
-  }
-  (equal);
-  var great = result.num1 > 100
+var great = result.num1 > 100
 var less = result.num1 < 100
-var equal = result.num1 == 100
-if (great == true)  {
-  (result.num1 > 100);
+if (great)  {
   console.log(result.num1 + ' > 100');
-  } else if (less == true)  {
-  (result.num1 < 100);
+  } else if (less)  {
 console.log(result.num1 + ' < 100');
 } else {
-  (equal == 100);
 console.log(result.num1 + ' = 100');
 }
 }); 
