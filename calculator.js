@@ -23,17 +23,17 @@ prompt.start();
  * Take two numbers as input. Ask if user wants addition, subtraction, multiplication, division. Print num1 +, -, *, / num2.
  */
 prompt.get(['num1', 'num2', 'addition', 'subtraction', 'multiplication', 'division'], function (err, result)  {
-if (result.addition == "yes")  {
-var num3 = Number.parseInt(result.num1) + Number.parseInt(result.num2);
-console.log(result.num1 + ' + ' + result.num2 + ' = ' + num3);
-} else if (result.subtraction == "yes")  {
-var num4 = Number.parseInt(result.num1) - Number.parseInt(result.num2);
-console.log(result.num1 + ' - ' + result.num2 + ' = ' + num4);
-} else if (result.multiplication == "yes")  {
-var num5 = Number.parseInt(result.num1) * Number.parseInt(result.num2);
-console.log(result.num1 + ' * ' + result.num2 + ' = ' + num5);
-} else if (result.division == "yes")  {
-var num6 = Number.parseInt(result.num1) / Number.parseInt(result.num2);
-console.log(result.num1 + ' / ' + result.num2 + ' = ' + num6);
-} else  {'?'}
+  if (result.addition == "yes")  {
+    var num3 = Number.parseInt(result.num1) + Number.parseInt(result.num2);
+    console.log(result.num1 + ' + ' + result.num2 + ' = ' + num3);
+  } else if (result.subtraction == "yes")  {
+    var num4 = Number.parseInt(result.num1) - Number.parseInt(result.num2);
+    console.log(result.num1 + ' - ' + result.num2 + ' = ' + num4);
+  } else if (result.multiplication == "yes")  {
+    var num5 = Number.parseInt(result.num1) * Number.parseInt(result.num2);
+    console.log(result.num1 + ' * ' + result.num2 + ' = ' + num5);
+  } else if (result.division == "yes")  {
+    var num6 = Number.parseInt(result.num1) / Number.parseInt(result.num2);
+    console.log(result.num1 + ' / ' + result.num2 + ' = ' + num6);
+  }
 }); 
